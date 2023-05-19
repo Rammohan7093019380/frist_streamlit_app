@@ -48,7 +48,7 @@ try:
 # write your own comment - what does this do?
         streamlit.dataframe(fruityvice_normalized)
 
-expect URLError as e:
+except URLError as e:
     streamlit.error()
 #import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
